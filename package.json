@@ -5,12 +5,6 @@
   "scripts": {
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'pre-commit hook test'",
-      "pre-push": "echo 'pre-push hook test'"
-    }
-  },
   "dependencies": {},
   "devDependencies": {
     "husky": "^7.0.2"
