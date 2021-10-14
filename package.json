@@ -1,7 +1,7 @@
 {
   "name": "linters-learning",
   "version": "1.0.0",
-  "main": "./dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "prepare": "husky install"
   },
@@ -11,6 +11,7 @@
       "pre-push": "echo 'pre-push hook test'"
     }
   },
+
   "dependencies": {},
   "devDependencies": {
     "husky": "^7.0.2"
