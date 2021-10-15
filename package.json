@@ -5,11 +5,29 @@
   "scripts": {
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "prettier --write",
+        "stylelint --fix --config ./.stylelintrc-format",
+        "git add"
+      ]
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "husky": "^7.0.2",
-    "prettier": "2.4.1",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0"
   }
 }
