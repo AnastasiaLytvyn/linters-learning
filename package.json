@@ -3,23 +3,16 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "useTabs": false,
+    "tabWidth": 4
   },
-  "lint-staged": {
-    "linters": {
-      "*.css": [
-        "prettier --write",
-        "stylelint --fix --config ./.stylelintrc-format",
-        "git add"
-      ]
-    }
-  },
-  "dependencies": {},
   "devDependencies": {
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
